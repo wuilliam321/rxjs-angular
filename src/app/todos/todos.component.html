@@ -1,0 +1,5 @@
+<ul>
+  <li *ngFor="let todo of allTodos$ | async">
+    {{ todo.title }} by {{ todo.user }} | {{ todo.completed }} | {{ todo.important }}
+  </li>
+</ul>
